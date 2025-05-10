@@ -16,7 +16,7 @@ router.post(
 router.get(
     '/',
     authenticateToken,
-    authorizeRole(['Receptionist', 'Doctor', 'Nurse', 'Admin']), // Define roles
+    authorizeRole(['Receptionist', 'Doctor', 'Nurse', 'Admin','WardBoy']), // Define roles
     PatientController.getAllPatients
 );
 
